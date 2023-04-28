@@ -5,7 +5,29 @@
 
     background bouton: #40e29c
 
-    background menu: #274437
+    background menu: 
     color text: #1e1e1e
     background color: #f9f9f9
 */
+
+:root {
+    --main-bg-menu-color: #274437;
+    --light-color: #fefefe;
+    --dark-green-color: #274437;
+    --main-light-green-color: #40e29c;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    width: 75%;
+    margin: auto;
+}
