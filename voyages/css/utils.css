@@ -1,0 +1,61 @@
+.container {
+    width: 75%;
+    margin: auto;
+}
+
+.ss-title {
+    margin: 30px 0;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.py-4 {
+    padding: 0 4rem;
+}
+
+.px-4 {
+    padding: 4rem 0;
+}
+
+.w-40 {
+    width: 40%;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.btn {
+    text-decoration: none;
+    background-color: var(--light-green-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    border-radius: 10px;
+    display: inline-block
+}
+
+.txt-end {
+    text-align: right;
+}
+
+.txt-green-light {
+    color: var(--light-green-color);
+}
+
+.txt-green-dark {
+    color: var(--dark-green-color);
+}
+
+.bordered {
+    width: 100%;
+    border-radius: 20px;
+}

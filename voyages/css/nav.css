@@ -10,13 +10,25 @@ nav ul {
     list-style-type: none;
 }
 
-nav ul li {
-    margin: 0 10px;
+nav ul li.dropdown {
+    position: relative;
+}
+
+nav ul li .dropdown-menu {
+    position: absolute;
+    background: var(--main-bg-menu-color);
+    display: flex;
+    flex-direction: column;
+    display: none;
 }
 
 nav ul li a {
     display: block;
     color: var(--light-color);
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 20px;
+}
+
+nav ul li a:hover {
+    background: var(--light-green-color);
 }

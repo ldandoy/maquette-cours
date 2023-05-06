@@ -5,9 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agence de voyages</title>
+    <link rel="stylesheet" href="css/utils.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/hero.css">
     <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/card.css">
+    <link rel="stylesheet" href="css/card2.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -15,7 +18,13 @@
         <nav>
             <ul>
                 <li><a href="">Agence D&D</a></li>
-                <li><a href="">Séjour</a></li>
+                <li>
+                    <a href="#" class="dropdown-toggle">Séjour</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="" href="#">Tokyo</a></li>
+                        <li><a class="" href="#">Toronto</a></li>
+                    </ul>
+                </li>
                 <li><a href="">Club</a></li>
             </ul>
             <ul>
@@ -31,6 +40,193 @@
             </div>
         </div>
     </head>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="ss-title txt-green-light">
+                        <h2>Notre état d'esprit</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div style="width: 20%">
+                        <img class="responsive" src="img/img1.jpg" alt="" />
+                    </div>
+                    <div class="py-4 alaune">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa deserunt modi maxime quo rem id molestiae quam ad, deleniti est fugiat culpa. Minima pariatur necessitatibus nesciunt suscipit incidunt ratione inventore?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa deserunt modi maxime quo rem id molestiae quam ad, deleniti est fugiat culpa. Minima pariatur necessitatibus nesciunt suscipit incidunt ratione inventore?</p>
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsa deserunt modi maxime quo rem id molestiae quam ad, deleniti est fugiat culpa. Minima pariatur necessitatibus nesciunt suscipit incidunt ratione inventore?</p>
+                        <div class="txt-end">
+                            <a href="#" class="btn">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ss-title txt-green-dark">
+                        <h3>Découvrez les sélections de nos ambassadeurs</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card">
+                        <img src="img/img1.jpg" alt="" class="card-img" />
+                        <div class="card-body">
+                            <h5>Titre</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam fugiat non hic, possimus at tenetur nulla, dolores, enim eius sequi. Suscipit culpa molestias repellat, distinctio aspernatur ea debitis voluptatem.</p>
+                            <div class="txt-end">
+                                <a href="#" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/img2.jpg" alt="" class="card-img" />
+                        <div class="card-body">
+                            <h5>Titre</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam fugiat non hic, possimus at tenetur nulla, dolores, enim eius sequi. Suscipit culpa molestias repellat, distinctio aspernatur ea debitis voluptatem.</p>
+                            <div class="txt-end">
+                                <a href="#" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <img src="img/img3.jpg" alt="" class="card-img" />
+                        <div class="card-body">
+                            <h5>Titre</h5>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus aliquam fugiat non hic, possimus at tenetur nulla, dolores, enim eius sequi. Suscipit culpa molestias repellat, distinctio aspernatur ea debitis voluptatem.</p>
+                            <div class="txt-end">
+                                <a href="#" class="btn">En savoir plus</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-green">
+            <div class="container">
+                <div class="row">
+                    <div class="ss-title">
+                        <h2>Les pépites</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <a class="box" style="background-image: url('img/img1.jpg');">
+                        <div>ECOLOGIE</div>
+                    </a>
+                    <a class="box" style="background-image: url('img/img2.jpg');">
+                        <div>ESPRIT LOCAL</div>
+                    </a>
+                    <a class="box" style="background-image: url('img/img3.jpg');">
+                        <div>BELLES PLAGES</div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="ss-title">
+                        <h2>Découvrez nos catégories de voyages itinérants</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="card2">
+                        <img src="img/img1.jpg" alt="" />
+                        <div class="card2-body">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="quality">Très bon</div>
+                                    <div class="country">France</div>
+                                    <div class="name">Ibis Hotel</div>
+                                    <div class="info">Bon Plan - Bord de la mer - Entre pote</div>
+                                </div>
+                                <div class="w-40">
+                                    <div class="info">Avec transport</div>
+                                    <div class="price">262€</div>
+                                    <div class="info">5jours/4nuits<br />Départ 17 oct</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <img src="img/img1.jpg" alt="" />
+                        <div class="card2-body">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="quality">Très bon</div>
+                                    <div class="country">France</div>
+                                    <div class="name">Ibis Hotel</div>
+                                    <div class="info">Bon Plan - Bord de la mer - Entre pote</div>
+                                </div>
+                                <div class="w-40">
+                                    <div class="info">Avec transport</div>
+                                    <div class="price">262€</div>
+                                    <div class="info">5jours/4nuits<br />Départ 17 oct</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <img src="img/img1.jpg" alt="" />
+                        <div class="card2-body">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="quality">Très bon</div>
+                                    <div class="country">France</div>
+                                    <div class="name">Ibis Hotel</div>
+                                    <div class="info">Bon Plan - Bord de la mer - Entre pote</div>
+                                </div>
+                                <div class="w-40">
+                                    <div class="info">Avec transport</div>
+                                    <div class="price">262€</div>
+                                    <div class="info">5jours/4nuits<br />Départ 17 oct</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card2">
+                        <img src="img/img1.jpg" alt="" />
+                        <div class="card2-body">
+                            <div class="row">
+                                <div class="w-50">
+                                    <div class="quality">Très bon</div>
+                                    <div class="country">France</div>
+                                    <div class="name">Ibis Hotel</div>
+                                    <div class="info">Bon Plan - Bord de la mer - Entre pote</div>
+                                </div>
+                                <div class="w-40">
+                                    <div class="info">Avec transport</div>
+                                    <div class="price">262€</div>
+                                    <div class="info">5jours/4nuits<br />Départ 17 oct</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="ss-title txt-green-dark">
+                        <h3>Découvrez les sélections de nos ambassadeurs</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="w-50">
+                        <img src="img/img2.jpg" alg="" class="bordered responsive" />
+                    </div>
+                    <div class="w-50 py-4">
+                        <h2>Nos points forts !</h2>
+                        <ul class="tips">
+                            <li>Devenir testeurs de voyages</li>
+                            <li>Faire rayonner D&D</li>
+                            <li>Participer au développement de nos projets clés</li>
+                            <li>Adhérer à la charte du voyageur responsable</li>
+                            <li>Bénéficier d'avantages lorsque vous voyagez</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <footer>
         <div class="container">
@@ -78,9 +274,13 @@
                     </ul>
                 </div>
             </div>
-            <div class="row newsletter">
-                <div><h2>Newsletter</h2></div>
-                <div></div>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <form action="" method="get">
+                    <input type="text" name="name" required placeholder="Entrez votre nom pour être recontacté" />
+                    <input type="email" name="email" required placeholder="Entrez votre email pour être recontacté" />
+                    <button type="submit">S'inscrire</button>
+                </form>
             </div>
             <div class="row links">
                 <div class="rs">
@@ -103,5 +303,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 </html>

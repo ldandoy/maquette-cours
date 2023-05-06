@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    background-color: #263556;
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.left {
+    width: 45%;
+    height: 100%;
+}
+
+.left .bg {
+    background-image: url('../img/bg-left.png');
+    height: 100%;
+    background-size: cover;
+    background-position: right;
+}
+
+.left .bg img {
+    width: 40%;
+    margin: auto;
+    display: block;
+    padding: 15% 0 0 0 ;
+}
+
+.right {
+    width: 55%;
+    height: 100%;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 15%;
+}
+
+h1 {
+    color: white;
+    font-size: 4rem;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+button.btn {
+    width: 230px;
+    height: 70px;
+    border: 0;
+    border-radius: 50px;
+    margin-right: 2rem;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+button.detail {
+    background: linear-gradient(to left, #7125fe, #9e11f9);
+    box-shadow: 0px 0px 10px #9e11f9;
+}
+
+button.buy {
+    background: transparent;
+    border: 2px solid #9e11f9;
+}
+
+.trait {
+    width: 500px;
+    height: 2px;
+    background: linear-gradient(to right, #445682, #263556);
+    border-radius: 50px;
+    margin: 50px 0;
+}
+
+.cards {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card {
+    color: white;
+    display: flex;
+    margin-top: 50px;
+}
+
+.card img {
+    margin: 0 20px;
+    width: 50px;
+}
+
+@media (max-width: 650px) {
+    .action {
+        width: 50%;
+        margin: auto;
+    }
+
+    .action button {
+        margin-top: 40px;
+    }
+
+    .cards {
+        flex-direction: column !important;
+    }
+}
+
+@media (max-width: 1024px) {
+    section {
+        flex-direction: column;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .left .bg img {
+        width: 35%;
+        padding: 15% 0 20% 0;
+    }
+
+    .right {
+        width: 100%;
+    }
+
+    .cards {
+        width: 90%;
+        padding-bottom: 50px;
+        flex-direction: row;
+    }
+
+    .card img {
+        width: 20px;
+    }
+}

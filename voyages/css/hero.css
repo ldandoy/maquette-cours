@@ -7,4 +7,5 @@
     font-size: 3rem;
     color: var(--light-color);
     text-shadow: var(--dark-green-color) 1px 0 10px;
+    width: 100%;
 }

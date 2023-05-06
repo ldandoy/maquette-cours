@@ -1,0 +1,70 @@
+@import 'params';
+
+body {
+    background-color: $light;
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+
+    div {
+        padding-bottom: 10px;
+    }
+}
+
+.btnhover {
+    padding: 10px;
+    background-color: $lightgreen;
+    border: none;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: $lightseagreen;
+        cursor: pointer;
+        color: red;
+        transition: background-color 1000ms linear;
+        -webkit-transition: background-color 1000ms linear;
+        -ms-transition: background-color 1000ms linear;
+        transition: color linear;
+        -webkit-transition: color 1000ms linear;
+        -ms-transition: color 1000ms linear;
+    }
+}
+
+.btn {
+    background: none;
+    border: 2px solid #000;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    width: 200px;
+    cursor: pointer;
+    transform: color 0.4s linear;
+    -webkit-transition: color 0.4s linear;
+    -ms-transition: color 0.4s linear;
+    position: relative;
+
+    &:hover {
+        color: #fff;
+
+        &::before {
+            transform: scaleX(1);
+        }
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        z-index: -1;
+        transition: transform 0.5s;
+        transform-origin: 0 0;
+        transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+        transform: scaleX(0);
+    }
+}
